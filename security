@@ -1,0 +1,11 @@
+There are two popular ways of security mechanisms exists
+
+1) session based authentication
+Limitations: session has to be replicated for applications running on multiple instances (redis shared cache). Or we need to sticky session
+concept
+
+server has to maintaing the state of the session id/token to identify the user
+
+2) JWT  - based  authourization
+
+A signed token will the handed over to the user he/she authenticated. Its users responsibilty to carry the signed token in the subsequent calls
